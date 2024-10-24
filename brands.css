@@ -1,0 +1,419 @@
+/* * {
+    outline: 1px solid red;
+} */
+
+:root {
+  --main-color: #dfa43f;
+  --main-font:"Inter", sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/*--Preloader--*/
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+  background-image: url('Assets/Preloadbg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.preloader img {
+  mix-blend-mode: lighten;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.preloader-hidden {
+  display: none;
+}
+
+/*--Navbar--*/
+.navbar {
+  padding: 1rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+  width: 130px;
+  height: auto;
+}
+
+.custom-navbar {
+  background-color: rgb(255, 255, 255) !important;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+
+.nav-link {
+  font-size: 1rem;
+}
+
+.navbar .nav-link {
+  color: rgb(0, 0, 0) !important;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--main-color) !important;
+  /* Text color for hovered and active navbar links */
+}
+
+.navbar-toggler {
+  border-color: rgb(0, 0, 0);
+}
+
+.nav-item a {
+  margin-left: 1rem;
+  font-size: large;
+}
+
+.d-flex .apply {
+  border-radius: 25px;
+  background-color: var(--main-color);
+  font-size: large;
+  color: #fff;
+  border-width: 5px;
+  padding: 10px 30px;
+  transition: border-color 0.3s ease, border-width 0.3s ease, padding 0.3s ease;
+}
+
+.d-flex .apply:hover {
+  border-color: var(--main-color);
+}
+
+/* Brands */
+.brands {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* Horizontally center */
+  align-items: center;
+  /* Vertically center */
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Centers text vertically within the container */
+  text-align: start;
+  /* Center the text inside */
+  height: 100%;
+  /* Full height of the parent */
+}
+
+.text-container h1 {
+  font-size: 3em;
+  color: var(--main-color);
+  font-family: var(--main-font);
+}
+
+.text-container p {
+  font-size: 1em;
+  font-family: var(--main-font);
+  margin-bottom: 1em;
+}
+
+.social-links {
+  margin-top: 1;
+  /* Space between paragraph and social links */
+}
+
+.social-links a {
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.social-links a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.card-carousel {
+  --card-width: 80%;
+  --card-max-width: 350px;
+  --card-height: 480px;
+  --carousel-min-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  height: var(--card-height);
+  min-width: var(--carousel-min-width);
+  position: relative;
+  transition: filter 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-carousel .card {
+  width: var(--card-width);
+  max-width: var(--card-max-width);
+  text-align: center;
+  padding: 1em;
+  min-width: 250px;
+  height: var(--card-height);
+  position: absolute;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.5);
+  transition: inherit;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, opacity 0.3s ease, left 0.3s ease;
+}
+
+.card:nth-of-type(1) .image-container {
+  background-image: url("Assets/ParesLogo.png");
+}
+
+.card:nth-of-type(2) .image-container {
+  background-image: url("Assets/TSGLogo.png");
+}
+
+.card:nth-of-type(3) .image-container {
+  background-image: url("Assets/CaliPizzaLogo.png");
+}
+
+.card:nth-of-type(4) .image-container {
+  background-image: url("Assets/PansolLogo.png");
+}
+
+.card:nth-of-type(5) .image-container {
+  background-image: url("Assets/PizzeriaLogo.png");
+}
+
+.card:nth-of-type(6) .image-container {
+  background-image: url("Assets/KalyeExpressLogo.png");
+}
+
+.card:nth-of-type(7) .image-container {
+  background-image: url("Assets/SapporoLogo.png");
+}
+
+.image-container {
+  width: 20em;
+  height: 20em;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2em;
+  align-items: center;
+}
+
+.image-container::after {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 120%;
+  border-radius: 100%;
+  position: absolute;
+  top: calc(-10% - 3px);
+  left: calc(-10% - 3px);
+}
+
+#carousel-text {
+  max-width: 40%;
+  padding: 0 1em;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+/* Media Queries for Different Screen Sizes */
+@media (max-width: 575.98px) {
+
+  /* Extra small devices (phones, 576px and down) */
+  .text-container h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  .text-container p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .card-carousel {
+    --card-width: 90%;
+    --card-max-width: 300px;
+    --card-height: 400px;
+    --carousel-min-width: 100%;
+  }
+
+  .image-container {
+    width: 15em;
+    height: 15em;
+  }
+
+  .card-carousel {
+    margin-bottom: 2em;
+    /* Add margin below the carousel */
+  }
+
+  .social-links {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  /* Small devices (tablets, 576px and up) */
+  .text-container h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  .text-container p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .card-carousel {
+    --card-width: 85%;
+    --card-max-width: 320px;
+    --card-height: 420px;
+    --carousel-min-width: 100%;
+  }
+
+  .image-container {
+    width: 17em;
+    height: 17em;
+  }
+
+  .card-carousel {
+    margin-bottom: 2em;
+    /* Add margin below the carousel */
+  }
+
+  .social-links {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  /* Medium devices (tablets, 768px and up) */
+  .text-container h1 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  .text-container p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .card-carousel {
+    --card-width: 80%;
+    --card-max-width: 350px;
+    --card-height: 480px;
+    --carousel-min-width: 600px;
+  }
+
+  .image-container {
+    width: 20em;
+    height: 20em;
+  }
+
+  .card-carousel {
+    margin-bottom: 2em;
+    /* Add margin below the carousel */
+  }
+
+  .social-links {
+    text-align: center;
+    margin-bottom: 1em;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .card-carousel {
+    --card-width: 80%;
+    --card-max-width: 350px;
+    --card-height: 480px;
+    --carousel-min-width: 600px;
+  }
+
+  .image-container {
+    width: 20em;
+    height: 20em;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  .card-carousel {
+    --card-width: 80%;
+    --card-max-width: 350px;
+    --card-height: 480px;
+    --carousel-min-width: 600px;
+  }
+
+  .image-container {
+    width: 20em;
+    height: 20em;
+  }
+}
+
+.smooth-return {
+  transition: transform 0.3s ease;
+}
+
+/* Footer */
+.custom-link {
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 820px) {
+  .footer img {
+    max-width: 50px;
+    /* Adjust logo size */
+  }
+
+  .footer .col-md-6 {
+    text-align: center;
+  }
+
+  .footer .col-md-12 {
+    text-align: center;
+  }
+
+  .footer .custom-link {
+    display: block;
+    margin-bottom: 10px;
+  }
+}

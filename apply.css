@@ -1,0 +1,95 @@
+html{
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #dfa43f;
+    --main-font: 'Inter', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0; /* Ensure no default margin affects layout */
+}
+
+.header {
+    padding-top: 15rem; /* Adjust this value as needed */
+    padding-bottom: 5rem;
+}
+
+.banner {
+    width: 80%;
+    height: 30%; 
+    background-color: var(--main-color);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    position: relative; /* Keep banner relative */
+}
+
+.banner h1{
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 4rem;
+    color: white;
+}
+
+.overlap-img {
+    position: absolute; /* Position image absolute to overlap */
+    top: -7.5rem; /* Adjust overlap positioning */
+    right: -3rem; /* Adjust as per your preference */
+    width: 20rem; /* Control the image size */
+}
+
+.jobs {
+    width: 100%; /* Set the same width as the banner */
+    margin: 2rem auto 15rem;
+}
+
+.job-list-wrapper {
+    max-height: 45.5rem; /* Set a max height for the wrapper */
+    overflow-y: hidden;  /* Hide scrollbar by default */
+    display: block; /* Always show the wrapper */
+    transition: overflow-y 0.3s; /* Smooth transition for overflow */
+}
+
+/* Show scrollbar on hover */
+.job-list-wrapper:hover {
+    overflow-y: auto;  /* Enable vertical scrolling when hovered */
+}
+
+/* Scrollbar Styles */
+.job-list-wrapper::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.job-list-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+.job-list-wrapper::-webkit-scrollbar-thumb {
+    background: var(--main-color); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+
+.card {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245) !important;
+}
+
+.card-body a {
+    background-color: var(--main-color);
+    display: inline-block; /* Ensure anchor behaves like a block element */
+    color: white; /* Optional: Set text color for better visibility */
+    padding: 10px 15px; /* Optional: Add padding for a better button look */
+    border-radius: 5px; /* Optional: Add border radius */
+    text-align: center; /* Optional: Center text */
+    text-decoration: none; /* Remove underline */
+}
+
+.card-body a:hover {
+    box-shadow: 0 4px 15px var(--main-color); /* Set box-shadow with size and spread */
+    transition: box-shadow 0.3s ease; /* Optional: Smooth transition effect */
+    background-color: var(--main-color);
+}

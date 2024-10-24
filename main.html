@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bigtime Empire Corp.</title>
+    <link rel="icon" href="Assets/Icon.png" width="100">
+    <link rel="stylesheet" href="main.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+        <!--Preloader-->
+        <div class="preloader" id="load">
+            <img id="pic" src="Assets/preloader.gif" alt="Loading..." width="1200" height="auto">
+        </div>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg custom-navbar" style="position: fixed;">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="main.html">
+                    <img src="Assets/Logo.png" alt="logo" width="150px" height="70px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="brands.html">Brands</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link fw-bold" href="franchise.html">Franchise <i class='bx bx-link-external' style="font-size: 15px; font-weight: bold;"></i></a>
+                        </li> -->
+                    </ul>
+                    <div class="d-flex">
+                        <button class="apply btn btn-sm btn-outline-light fw-bold" type="button" onclick="window.location.href='apply.html'">Apply Now!</button>
+                    </div>                    
+                </div>
+            </div>
+        </nav>
+    
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="container-fluid vh-100 d-flex align-items-center">
+            <div class="row w-100 no-gutters">
+                <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-start text-container">
+                    <h1 class="left-text">Bigtime Empire<br>Corporation</h1>
+                    <p class="paragraph-text">Here, We Do Things Differently</p>
+                </div>
+                <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center image-container">
+                    <img src="Assets/building.png" alt="" class="responsive-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- News and Event -->
+    <section class="news" id="news" style="background-color: #f0f0f0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header mb-4 mb-md-5">
+                        <h1 class="font-weight-bold header-title" style="font-family: 'Inter', sans-serif; font-size: 3rem; margin-top: 3rem;">
+                            News <span style="color: #dfa43f;">| </span>Events
+                        </h1>
+                        <p class="font-weight-bold header-text" style="font-family: 'Inter', sans-serif; font-size: 1rem; margin-top: 2rem; text-align: center;">
+                            <i class='bx bxs-quote-left' style="font-size: 1.5rem; color: #dfa43f; margin-bottom: 2rem;">
+                            </i>&nbsp;&nbsp;&nbsp;&nbsp;Halloween is just around the corner! Make sure to visit our website and join the fun with festive ideas and spooky surprises. Don’t miss out on everything we have to offer to make your Halloween celebration unforgettable. Let’s get ready for a season filled with treats and thrills!&nbsp;&nbsp;&nbsp;&nbsp;<i class='bx bxs-quote-left' style="font-size: 1.5rem; color: #dfa43f;"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Brands -->
+    <div class="brands" id="brands">
+        <div id="brands-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-header" style="display: flex; align-items: center; justify-content: center; text-align: center; padding: 2rem;">
+                <h1 style="font-family: 'Inter', sans-serif; font-size: 5rem; font-weight: bold;">Our <span style="color: #dfa43f;">Brands</span></h1>
+            </div>
+            
+            <ol class="carousel-indicators-brand">
+                <li data-target="#brands-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#brands-carousel" data-slide-to="1"></li>
+                <li data-target="#brands-carousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="image d-flex justify-content-center align-items-center" style="height: 40rem; background: #c44633">
+                        <img src="Assets/Pares.png" alt="" style="width: 110%; height: auto;" class="Pares">
+                        <img src="Assets/Chili.png" alt="" style="width: 40%; height: auto; position: absolute; top: 29%; left: 55%; z-index: 2;" class="chili">
+                        <img src="Assets/Calamansi.png" alt="" style="width: 15%; height: auto; position: absolute; top: 5%; left: 10%; z-index: 2;" class="calamansi" >
+                        <img src="Assets/Garlic.png" alt="" style="width: 10%; height: auto; position: absolute; top: 65%; left: 25%; z-index: 2;" class="garlic">
+                        <img src="Assets/onion1.png" alt="" style="width: 40%; height: auto; position: absolute; top: -30%; left: 45%; z-index: 1;" class="onion1">
+                        <img src="Assets/onion2.png" alt="" style="width: 30%; height: auto; position: absolute; top: -25%; left: 62%; z-index: 1;" class="onion2">
+                        <img src="Assets/onion3.png" alt="" style="width: 35%; height: auto; position: absolute; top: -8%; left: 54%; z-index: 2;" class="onion3">
+                        <h1 style="font-size: 17.5rem; font-family: Impact; color: white;">PARES RETIRO</h1>
+                    </div>                
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 40rem; background: #393d3f;">
+                        <img src="Assets/TSG.png" alt="" class="Tsg">
+                        <img src="Assets/Lettuce.png" alt="" style="width: 30%; height: auto; position: absolute; top: -20%; left: 82%; z-index: 2;" class="lettuce">
+                        <img src="Assets/Cucumber.png" alt="" style="width: 20%; height: auto; position: absolute; top: 65%; left: 15%; z-index: 2;" class="Cucumber">
+                        <img src="Assets/Tomato.png" alt="" style="width: 30%; height: auto; position: absolute; top: 60%; left: 75%; z-index: 2;" class="Tomato">
+                        <img src="Assets/Mayo.png" alt="" style="width: 30%; height: auto; position: absolute; top: 5%; left: -8%; z-index: 1;" class="Mayo">
+                        <h1 class="medium" style="font-size: 12rem; font-family: Impact; color: white;">THE SANDWICH GUY</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 40rem; background: #f0e583;">
+                        <img src="Assets/CaliPizza.png" alt="" style="width: 60%; height: auto;" class="Cali">
+                        <img src="Assets/Pepperoni.png" alt="" style="width: 13%; height: auto; position: absolute; top: 60%; left: 25%; z-index: 1;" class="Pepperoni">
+                        <img src="Assets/Cheese.png" alt="" style="width: 20%; height: auto; position: absolute; top: 43%; left: 75%; z-index: 2;" class="Cheese">
+                        <img src="Assets/Pineapple.png" alt="" style="width: 30%; height: auto; position: absolute; top: -5%; left: 2%; z-index: 2;" class="Pineapple1">
+                        <img src="Assets/Pineapple.png" alt="" style="width: 20%; height: auto; position: absolute; top: -15%; left: 10%; z-index: 2;" class="Pineapple2">
+                        <img src="Assets/Pineapple.png" alt="" style="width: 25%; height: auto; position: absolute; top: -10%; left: -3%; z-index: 2;" class="Pineapple3">
+                        <img src="Assets/Bits1.png" alt="" style="width: 25%; height: auto; position: absolute; top: -10%; left: 50%; z-index: 2;" class="Bits1">
+                        <img src="Assets/Bits2.png" alt="" style="width: 30%; height: auto; position: absolute; top: -3%; left: 53%; z-index: 2;" class="Bits2">
+                        <img src="Assets/Bits3.png" alt="" style="width: 30%; height: auto; position: absolute; top: -25%; left: 57%; z-index: 2;" class="Bits3">
+                        <img src="Assets/Bits4.png" alt="" style="width: 30%; height: auto; position: absolute; top: -12%; left: 60%; z-index: 2;" class="Bits4">
+                      <h1 style="font-size: 20rem; font-family: Impact; color: white;">CALI PIZZA</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 40rem; background: url(Assets/Pansol.png) no-repeat center center; background-size: cover;">
+                        <img src="Assets/umbrella.png" alt="" style="width: 17%; height: auto; position: absolute; top: 10%; left: 80%; z-index: 1;" class="umbrella1">
+                        <img src="Assets/beachball.png" alt="" style="width: 15%; height: auto; position: absolute; top: 25%; left: 0%; z-index: 1;" class="beachball">
+                        <h1 class="xsmall" style="font-size: 9rem; font-family: Impact; color: white;">CALIFORNIA BEACH PANSOL</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 40rem; background: #f2f55b;">
+                        <img src="Assets/AngusPizza.png" alt="" style="width: 43%; height: auto;" class="Calibeachpizza">
+                        <img src="Assets/GreenBell.png" alt="" style="width: 30%; height: auto; position: absolute; top: 50%; left: -5%; z-index: 1;" class="Green">
+                        <img src="Assets/RedBell.png" alt="" style="width: 30%; height: auto; position: absolute; top: -40%; left: 70%; z-index: 2;" class="Red">
+                        <img src="Assets/Shrooms.png" alt="" style="width: 30%; height: auto; position: absolute; top: -55%; left: 10%; z-index: 2;" class="Shrooms">
+                        <img src="Assets/Cheese.png" alt="" style="width: 30%; height: auto; position: absolute; top: 60%; left: 60%; z-index: 1;" class="Cheese">
+                        <h1 class="xsmall" style="font-size: 9.5rem; font-family: Impact; color: white;">CALIFORNIA BEACH PIZZA</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 40rem; background: #377ee7;">
+                        <img src="Assets/KalyeExpress.png" alt="" style="width: 60%; height: auto;" class="Kalye">
+                        <img src="Assets/Chili.png" alt="" style="width: 40%; height: auto; position: absolute; top: 29%; left: 55%; z-index: 2;" class="chili">
+                        <img src="Assets/Calamansi.png" alt="" style="width: 15%; height: auto; position: absolute; top: 5%; left: 10%; z-index: 2;" class="calamansi" >
+                        <img src="Assets/Garlic.png" alt="" style="width: 10%; height: auto; position: absolute; top: 65%; left: 25%; z-index: 2;" class="garlic">
+                        <img src="Assets/onion1.png" alt="" style="width: 40%; height: auto; position: absolute; top: -30%; left: 45%; z-index: 1;" class="onion1">
+                        <img src="Assets/onion2.png" alt="" style="width: 30%; height: auto; position: absolute; top: -25%; left: 62%; z-index: 1;" class="onion2">
+                        <img src="Assets/onion3.png" alt="" style="width: 35%; height: auto; position: absolute; top: -8%; left: 54%; z-index: 2;" class="onion3">
+    
+                        <h1 class="large" style="font-size: 15rem; font-family: Impact; color: white;">KALYE EXPRESS</h1>
+                    </div>
+                    
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center align-items-center" style="height: 40rem; background: #dd3535;">
+                        <img src="Assets/milktea.png" alt="" style="width: 70%; height: auto;" class="Milktea">
+                        <img src="Assets/biscoff1.png" alt="" style="width: 30%; height: auto; position: absolute; top: -10%; left: 63%; z-index: 3;" class="Biscoff1">
+                        <img src="Assets/biscoff2.png" alt="" style="width: 30%; height: auto; position: absolute; top: -5%; left: 62%; z-index: 2;" class="Biscoff2">
+                        <img src="Assets/Tapioca.png" alt="" style="width: 25%; height: auto; position: absolute; top: 45%; left: 75%; z-index: 2;" class="Tapioca">
+                        <img src="Assets/Tea.png" alt="" style="width: 25%; height: auto; position: absolute; top: -40%; left: 15%; z-index: 2;" class="Tea">
+                        <img src="Assets/milk.png" alt="" style="width: 25%; height: auto; position: absolute; top: 50%; left: 2%; z-index: 2;" class="Milk">
+                        <h1 style="font-size: 20rem; font-family: Impact; color: white;">SAPPORO</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control-prev" href="#brands-carousel" role="button" data-slide="prev"></a>
+            <a class="carousel-control-next" href="#brands-carousel" role="button" data-slide="next"></a>
+        </div>
+    </div>
+
+    <!-- Milestone -->
+    <section class="milestone">
+        <div class="header text-center my-4">
+            <h1 class="display-4" style="font-family: 'Inter', sans-serif; font-weight: bold;">
+                Our <span style="color: #dfa43f;">Milestone</span>
+            </h1>
+        </div>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12 col-md-3 mb-4 d-flex justify-content-center">
+                    <div class="stat-card d-flex flex-column align-items-center justify-content-center p-4 text-center">
+                        <div class="stat-number fs-3 fw-bold">245%</div>
+                        <div class="stat-description mt-2">More revenues for the brand</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4 d-flex justify-content-center">
+                    <div class="stat-card d-flex flex-column align-items-center justify-content-center p-4 text-center">
+                        <div class="stat-number fs-3 fw-bold">130k+</div>
+                        <div class="stat-description mt-2">Audience reach across platform</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4 d-flex justify-content-center">
+                    <div class="stat-card d-flex flex-column align-items-center justify-content-center p-4 text-center">
+                        <div class="stat-number fs-3 fw-bold">50+</div>
+                        <div class="stat-description mt-2">Brands work with us</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-4 d-flex justify-content-center">
+                    <div class="stat-card d-flex flex-column align-items-center justify-content-center p-4 text-center">
+                        <div class="stat-number fs-3 fw-bold">80+</div>
+                        <div class="stat-description mt-2">No. of stores opened</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- Testimonials -->
+    <section class="testimonial" id="testimonial">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-sm-12">			
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+                        <h2>What Our Client <b style="color: #dfa43f;">Said About Us</b></h2>
+                
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>   
+            
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>&nbsp;The World's first Hexagon sandwich is now at SM City Tuguegarao! You'll like it a lot better if you try it. The Sandwich Guy, coz the best sandwiches are always made with love.</p>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>AnnamayTV</b></div>
+                                                    <div class="details">The Sandwich Guy Customer</div>
+                                                </div>										
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>&nbsp;Craving satisfied!! <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Words first whole wheat grilled hexagon sandwitch</p>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>3F MotoVenture</b></div>
+                                                    <div class="details">The Sandwich Guy Customer</div>
+                                                </div>										
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>			
+                            </div>
+                            <!-- <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Test</b></div>
+                                                    <div class="details">Test</div>										
+                                                </div>										
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>&nbsp;Estes Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Tonghie Sy</b></div>
+                                                    <div class="details">The Sandwich Guy Franchisee</div>
+                                                </div>										
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>			
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.</p>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Jovanie Lepalam</b></div>
+                                                    <div class="details">Kalye Express Franchisee</div>
+                                                </div>										
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonial">
+                                            <p>&nbsp;Vestibulum quis quam ut magna consequat faucibu. Eget mi suscipit tincidunt. Utmtc tempus dictum. Pellentesque virra. Quis quam ut magna consequat faucibus quam.</p>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-body">
+                                                <div class="overview">
+                                                    <div class="name"><b>Jay Cartalla</b></div>
+                                                    <div class="details">Pares Retiro Franchisee</div>
+                                                </div>										
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>			
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <a class="prev-carousel-control-prev carousel-control-prev" href="#myCarousel" data-slide="prev">
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
+                        <a class="next-carousel-control-next carousel-control-next" href="#myCarousel" data-slide="next">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #f0f0f0; color: #dfa43f;" class="pt-5 pb-4">
+        <div class="container text-center text-md-left">
+        <div class="row">
+    
+            <!-- About Us Column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+            <hr class="mb-4 mt-0 d-inline-block mx-auto">
+            <img src="Assets/Logo.png" alt="logo" width="250px" height="auto">
+            </div>
+    
+            <!-- Quick Links Column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-start">
+                <h6 class="text-uppercase font-weight-bold">Quick Links</h6>
+                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #dfa43f; height: 2px">
+                <p>
+                  <a href="main.html" class="custom-link" style="color: #000000; font-family: 'Inter', sans-serif;">Home</a>
+                </p>
+                <p>
+                  <a href="about.html" class="custom-link" style="color: #000000; font-family: 'Inter', sans-serif;">About Us</a>
+                </p>
+                <p>
+                  <a href="brands.html" class="custom-link" style="color: #000000; font-family: 'Inter', sans-serif;">Brands</a>
+                </p>
+                <!-- <p>
+                  <a href="franchise.html" class="custom-link" style="color: #000000; font-family: 'Inter', sans-serif;">Franchise</a>
+                </p> -->
+                <p>
+                  <a href="http://10.0.10.47:5000/" target="_blank" class="custom-link" style="color: #000000; font-family: 'Inter', sans-serif;">Login</a>
+                </p>
+            </div>
+    
+            <!-- Contact Column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mb-4 text-start">
+                <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                <hr class="mb-4 mt-0 d-inline-block" style="width: 60px; background-color: #dfa43f; height: 2px">
+                <div style="color: #000000; font-style: 'Inter', sans-serif;">
+                    <p><i class='bx bxs-map'></i> 2F Bramante, Renaissance Tower, Ortigas, Pasig, 1608, Philippines</p>
+                    <p><i class='bx bxs-envelope'></i> info@example.com</p>
+                    <p><i class='bx bxs-phone'></i> 86344237</p>
+                </div>
+              </div>
+    
+            <!-- Follow Us Column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase font-weight-bold">Follow Us</h6>
+            <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #dfa43f; height: 2px">
+            <p>
+                <a href="https://www.facebook.com/bigtimeempire/" target="_blank" style="color: #000000; font-size: 2rem;"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://x.com/BigtimeEmpire" target="_blank" style="color: #000000; font-size: 2rem;"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com/company/bigtime-empire-corporation" target="_blank" style="color: #000000; font-size: 2rem;"><i class='bx bxl-linkedin-square' ></i></a>
+            </p>
+            </div>
+        </div>
+        </div>
+    </footer>
+  
+    <!--Tawk API-->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/66dfdde850c10f7a00a69bda/1i7d7ll9b';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <!--Script-->
+    <script src="main.js"></script>
+    <!-- Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Ajax-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--Hammerjs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
+</body>
+</html>

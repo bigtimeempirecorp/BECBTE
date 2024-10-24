@@ -1,0 +1,179 @@
+/* * {
+    outline: 1px solid red;
+} */
+
+:root{
+    --main-color: #dfa43f;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*--Preloader--*/
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+    background-image: url('Assets/Preloadbg.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.preloader img {
+    mix-blend-mode: lighten;
+    z-index: 100;
+    overflow: hidden;
+}
+
+/*--Nabar--*/
+.navbar {
+    padding: 1rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 130px;
+    height: auto;
+}
+
+.custom-navbar {
+    background-color: rgb(255, 255, 255);
+    z-index: 99;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+
+.nav-link {
+    font-size: 1rem;
+}
+
+.navbar .nav-link {
+    color: rgb(0, 0, 0) !important;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--main-color) !important; /* Text color for hovered and active navbar links */
+}
+
+.navbar-toggler {
+    border-color: rgb(0, 0, 0);
+}
+
+.nav-item a {
+    margin-left: 1rem;
+    font-size: large;
+}
+
+.d-flex .apply {
+    border-radius: 25px;
+    background-color: var(--main-color);
+    font-size: large;
+    color: #fff;
+    border-width: 5px;
+    padding: 10px 30px;
+    transition: border-color 0.3s ease, border-width 0.3s ease, padding 0.3s ease;
+}
+
+.d-flex .apply:hover {
+    border-color: var(--main-color);
+}
+
+/* About Us */
+.about-us{
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.m-b-n30 {
+    margin-bottom: -30px;
+}
+.service-layer-image {
+    position: relative;
+    height: 577px;
+}
+
+.about-image {
+    max-width: 530px;
+}
+.service-layer-image .about-image-1 {
+    -webkit-box-shadow: #959ea5 0px 0px 41px;
+    box-shadow: #959ea5 0px 0px 41px;
+    border-radius: 50px;
+}
+.service-layer-image .about-image-2 {
+    position: absolute;
+    right: 0px;
+    top: 255px;
+}
+.mw-100 {
+    max-width: 100%!important;
+}
+
+h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 600 !important;
+    line-height: 1.2;
+    color: #232324;
+      font-size: 36px;
+
+}
+.about-content span {
+    position: relative;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    display: block;
+}
+.about-content span:after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 1px;
+    background: var(--main-color);
+}
+p {
+  font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #000000;
+    line-height: 2;
+}
+
+.m-b-30 {
+    margin-bottom: 30px;
+}
+
+/* Footer */
+.footer{
+    min-height: calc(100vh - 200px);
+}
+.custom-link {
+    text-decoration: none;
+  }
+  .custom-link:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 820px) {
+    .footer img {
+        max-width: 50px; /* Adjust logo size */
+    }
+    .footer .col-md-6 {
+        text-align: center;
+    }
+    .footer .col-md-12 {
+        text-align: center;
+    }
+    .footer .custom-link {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
